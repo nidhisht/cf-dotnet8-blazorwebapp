@@ -1,0 +1,9 @@
+﻿---
+applications:
+- name: cf-dotnet8-blazorwebapp
+  buildpack: dicf_dotnet_core_buildpack_latest
+  instances: 1
+  memory: 512M
+  stack: cflinuxfs4
+  env:
+    ASPNETCORE_ENVIRONMENT: Development
